@@ -1,0 +1,336 @@
+
+    :root {
+      --bleu: #14617a;        
+      --fond: #f1fcff;        
+      --ciel: #aeeaff;        
+      --noir: #02101a;        
+      --blanc: #ffffff;
+      --gris: #f1f1f1;       
+    }
+    /* Réinitialisation : enlève les marges par défaut des navigateurs */
+    * { margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; }
+    html { scroll-behavior: smooth; } /* défilement doux quand on clique sur le menu */
+   
+    body 
+    { font-family: "Poppins", sans-serif; 
+      background: var(--fond);
+       color: #262729;
+       line-height: 1.6; }
+    a { color: inherit;
+       text-decoration: none; }
+    img, svg { max-width: 100%;
+       display: block; }
+
+    /* Conteneur centré réutilisable */
+    .conteneur { width: min(1000px, 90%); 
+      margin-inline: auto; }
+
+    /* Boutons */
+    .btn { display: inline-block; 
+      padding: 12px 28px; 
+      border-radius: 4px;
+       border: 2px solid var(--bleu);
+           font: 600 15px "Poppins", sans-serif; 
+           cursor: pointer; }
+    .btn-plein { background: var(--bleu);
+       color: var(--blanc); }
+    .btn-contour 
+    { background: transparent;
+       color: var(--bleu); }
+    .btn:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #f2a900;
+       outline-offset: 2px; }
+
+    /* ========== EN-TÊTE ========== */
+    .entete { background: var(--blanc);
+       border-bottom: 1px solid #cfe3ea;
+        position: sticky; 
+        top: 0; 
+        z-index: 10;
+     box-shadow: 0 3px 8px #14617a; }
+    .entete .conteneur {
+       display: flex;
+       align-items: center;
+        justify-content: space-between;
+        padding-block: 12px; }
+
+    .logo { font-weight: 600;
+       color: var(--bleu); 
+      font-size: 20px; }
+
+    .menu ul { list-style: none;
+       display: flex;
+       gap: 22px; 
+       background: var(--bleu);
+        padding: 8px 24px;
+         border-radius: 4px; } 
+
+       .list button{
+        color: #14617a; 
+        border: none;
+        background: none;
+        font-size: larger;
+        font-weight: bold; }
+       .list{
+        display:flex;
+        gap: 10px;
+       }
+    .menu a { color: var(--blanc); 
+      font-size: 13px; }
+    .auth { display: flex;
+       gap: 22px; 
+      font-size: 13px; 
+      font-weight: 500; 
+      color: var(--bleu ); }
+
+    /* ========== HERO (accueil) ========== */ 
+    
+    .hero { padding-block: 70px 50px; }
+    .hero .conteneur { display: flex; 
+      align-items: center; 
+      justify-content: space-between;
+       gap: 40px; }
+    .hero-texte { max-width: 380px; }
+    .hero-texte p.sur-titre { font-size: 18px; }
+    .hero-texte h1 { font-size: 4rem;
+       color: var(--bleu);
+        line-height: 1.1; 
+        margin-bottom: 10px; 
+        font-weight: bold; }
+
+    .hero-texte p { font-size: 20px; } 
+
+    .hero-illu { width: 280px; flex-shrink: 0; }
+
+    .hero-actions { display: flex;
+       justify-content: center;
+        gap: 60px;
+         padding-bottom: 50px;
+          flex-wrap: wrap; }
+
+    /* ========== À PROPOS ========== */
+
+    .apropos { background: var(--bleu);
+       color: var(--blanc);
+        padding-block: 70px;
+         text-align: center; }
+    .apropos h2 { font-size: 36px;
+       margin-bottom: 8px; }
+
+    .apropos .accroche { font-size: 15px;
+       max-width: 520px;
+        margin: 0 auto 50px; }
+
+    .apropos .texte { text-align: left;
+       font-size: 14px;
+        max-width: 760px; 
+        margin-inline: auto; }
+
+    .apropos .texte p + p { margin-top: 8px; }
+
+    /* ========== TITRES DE SECTION (trait + titre) ========== */
+    .titre-section { text-align: center;
+       color: var(--bleu);
+        font-size: 32px;
+         font-weight: 600;
+          padding-top: 30px;
+           position: relative;
+            margin-bottom: 30px; }
+
+    .titre-section::before { content: "";
+       position: absolute;
+        top: 0;
+        left: 50%;
+         transform: translateX(-50%);
+          width: 110px;
+           height: 5px;
+            background: var(--bleu);
+             border-radius: 3px; }
+
+    /* ========== PARTENAIRES ========== */
+    .partenaires { 
+      padding-block: 60px 40px;
+     }
+    .carrousel { display: flex;
+       align-items: center;
+        gap: 12px; }
+
+    .fleche { background: none;
+       border: none;
+        color: var(--bleu); 
+        font-size: 18px;
+         cursor: pointer;
+          padding: 8px; }
+
+    .partenaires .piste { flex: 1; 
+      background: var(--ciel);
+       border-radius: 6px; 
+       padding: 50px 20px;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+         gap: 20px;
+          overflow-x: auto;
+          scroll-behavior: smooth; } 
+
+    .logo-part { text-align: center;
+    flex-shrink: 0; }
+
+    .logo-part svg { width: 90px;
+       height: 90px;
+       margin-inline: auto; }
+    .logo-part span { font-weight: 600;
+       color: #7a9fb0; }
+    .piste img{  height: 200px;}
+     #defarsci{
+      height: 300px;
+     }
+
+    /* ========== TÉMOIGNAGES ========== */
+    .temoignages { padding-block: 30px 40px; }
+
+    .temoignages h2.sous-titre { text-align: center;
+       color: var(--bleu); 
+       font-size: 20px;
+        margin-bottom: 40px; }
+
+    .temoignages .piste { flex: 1; 
+      display: flex;
+       justify-content: center; 
+       gap: 40px;
+        flex-wrap: wrap; 
+        padding: 40px; }
+
+    .carte { position: relative;
+       width: 300px; 
+       border: 1px solid var(--bleu);
+        border-radius: 4px;
+         background: var(--blanc);
+         padding: 70px 25px 25px 25px;
+          text-align: center; }
+
+  
+
+    .carte h3 { font-size: 14px; }
+    .carte .role { font-size: 12px;
+      
+       color: #555; 
+       margin-bottom: 8px; }
+       .avatar img{ 
+        top: -50px;
+        left: 50%; 
+       transform: translateX(-50%);
+        width: 100px;
+        
+        height: 100px;
+         border-radius: 50%;
+         object-fit: cover;
+         position: absolute;
+
+      }
+    .carte blockquote { font-size: 12px;
+       text-align: left; }
+
+    /* ========== CONTACT ========== */
+    .contact { padding-bottom: 60px; }
+
+    .formulaire { background: var(--bleu);
+       color: var(--blanc); 
+       padding: 40px 20px; }
+
+    .formulaire form { width: min(480px, 100%);
+       margin-inline: auto; }
+
+    .formulaire label { display: block;
+       font-size: 12px;
+        margin-top: 14px; 
+        margin-bottom: 4px; }
+
+    .formulaire input, .formulaire textarea { width: 100%; 
+      border: none; 
+      border-radius: 3px;
+       background: var(--gris); 
+       padding: 10px; 
+       font: 14px "Poppins", sans-serif; }
+
+    .formulaire textarea { min-height: 140px;
+       resize: vertical; }
+
+    .formulaire .btn { margin-top: 20px;
+       background: var(--blanc);
+        color: var(--bleu);
+         border-color: var(--blanc); }
+
+    /* ========== PIED DE PAGE ========== */
+    .pied { background: var(--noir);
+       color: var(--blanc);
+        padding-block: 40px 20px;
+         font-size: 12px; }
+          
+    .pied .colonnes { display: flex;
+       justify-content: space-between;
+        gap: 40px;
+         flex-wrap: wrap; }
+         
+    .pied h3 { font-size: 14px;
+       margin-bottom: 10px; }
+    .pied .col { flex: 1;
+       min-width: 220px; }
+    .pied .col-large { flex: 1.6; }
+
+    .reseaux { display: flex; 
+               gap: 10px; 
+               list-style: none; 
+               justify-content: center; 
+               margin-top: 40px;
+               background-color: white; 
+            
+               color: #14617a;
+               width: 120px;
+              }
+              .alignec{  
+                display: flex;
+                justify-content: center;
+         
+              }
+              .reseaux1{
+                list-style: none;    
+                padding: 0;
+                 margin: 0;
+                  display: flex;
+                flex-direction: column; 
+                gap: 4 px;
+                background: #ffffff;
+              }
+              .reseaux1 a{  
+                font: size 16px;      /* taille des icônes */
+               color: #1e4186;         /* couleur, à adapter à ta maquette */
+               text-decoration: none;
+              }
+
+    .reseaux a { display: flex;
+       place-items: center;
+        width: 22px;
+         height: 22px; }
+
+    .copyright { text-align: center;
+       font-size: 14px;
+        margin-top: 12px; }
+
+    /* ========== RESPONSIVE (téléphone) ========== */
+    @media (max-width: 760px) {
+      .entete .conteneur { flex-wrap: wrap;
+         gap: 10px; }
+
+      .menu ul { flex-wrap: wrap;
+         gap: 12px; }
+
+      .hero .conteneur { flex-direction: column;
+         text-align: center; }
+      .hero-actions { gap: 20px; }
+    }
+
+    /* Respecte les personnes qui désactivent les animations */
+    @media (prefers-reduced-motion: reduce) { html, .piste { scroll-behavior: auto; } }
+  

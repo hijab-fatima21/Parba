@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parba.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <header class="entete">
+
+    <div class="conteneur">
+      <a href="#accueil" class="logo">
+        <img src="ParBa.png" srcset="">
+      </a>
+    
+
+      <nav class="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">A propos</a></li>
+          <li><a href="#partenaires">Partenaire</a></li>
+          <li><a href="#temoignages">Témoignage</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    
+      </nav>
+ 
+       <div class="list">
+        <!-- <div> : sert à regrouper et mettre en forme -->
+          <button>
+        <a href="#">Connexion</a></button>
+       <button>
+        <a href="#">Inscription</a></button>
+    
+    </div>
+  </header>
+  <main>
+
+    <section class="hero" id="accueil">
+      <div class="conteneur">
+        <div class="hero-texte">
+          <p class="sur-titre">Votre assistante !</p>
+          <h1>ParBa</h1>
+          <p>La gestion des remplacements est devenue un enjeu structurant pour les établissements sanitaires et médico-sociaux.</p>
+          
+        </div>
+<img src="Tech Life Remote Life.png" alt="" srcset="">
+      </div>
+    </section>
+
+    <div class="hero-actions">
+      <a href="inscription.html" class="btn btn-plein">Commencer <i class="fa-solid fa-cloud-arrow-up"></i></a>
+      <!-- Un lien <a> stylé comme un bouton : il mène vers une autre page -->
+      <button type="button" class="btn btn-contour">Mon réseau <i class="fa-solid fa-sort-down"></i></button>
+      <!-- <button> : bouton cliquable ; type="button" = ne soumet pas de formulaire -->
+    </div>
+
+    <section class="apropos" id="apropos">
+      <div class="conteneur">
+        <h2>ParBa</h2>
+        <!-- <h2> : titre de section (niveau 2, sous le <h1>) -->
+        <p class="accroche">La gestion des remplacements est devenue un enjeu structurant pour les établissements sanitaires et médico-sociaux.</p>
+        <div class="texte">
+          <p>Face à l’absentéisme et ou l’accroissement temporaire d’activité imprévisible dans le temps, la gestion des remplacements est devenue un enjeu structurant pour les établissements sanitaires et médico-sociaux.Les outils actuels sont chronophages et peu efficients. ParBa propose une solution digitale simple et efficace, adaptée aux besoins de toutes les structures.
+          ParBa a été pensé pour révolutionner la gestion des ressources humaines dans la santé. Cette solution de pilotage des absences et des remplacements de personnel, 100% en ligne, permet aux établissements sanitaires et médico-sociaux de gérer leur personnel (agents, salariés et vacataires).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARTENAIRES ===================== -->
+    <section class="partenaires" id="partenaires">
+      <div class="conteneur">
+        <h2 class="titre-section">Nos partenaires</h2>
+
+        <div class="carrousel">
+          <button class="fleche" type="button" aria-label="Partenaires précédents" data-cible="piste-partenaires" data-sens="-1">◀</button>
+          <!-- Les boutons flèches sont reliés au petit script en bas de page grâce aux attributs data-* -->
+
+          <div class="piste" id="piste-partenaires">
+           <img src="BOOSTER LOGO-2.png" alt=""  > 
+           <img src="BOOSTER LOGO.png" alt="" >
+             <img src="WhatsApp Image 2026-11-16 at 10.35.06.jpeg" alt="" id="defarsci"  > 
+            
+           
+          </div>
+
+          <button class="fleche" type="button" aria-label="Partenaires suivants" data-cible="piste-partenaires" data-sens="1">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TÉMOIGNAGES ===================== -->
+    <section class="temoignages" id="temoignages">
+      <div class="conteneur">
+        <h2 class="sous-titre">Ils nous font confiance !</h2>
+
+        <div class="carrousel">
+          <button class="fleche" type="button" aria-label="Témoignages précédents" data-cible="piste-temoignages" data-sens="-1">◀</button>
+          <div class="piste" id="piste-temoignages">
+        
+            <article class="carte">
+              <div class="avatar">
+              <img src="Ellipse 1.png" alt="">
+              </div>
+              <h3>Adams Smith</h3>
+              <p class="role">General manager</p>
+              <blockquote>
+                <!-- <blockquote> : citation d'une personne -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id in posuere id leo, auctor aliquam feugiat fermentum. Aliquam integer ullamcorper tortor ac quis tortor. Pulvinar nisl sed.</p>
+              </blockquote>
+            </article>
+
+            <article class="carte">
+              <div class="avatar">
+                <img src="Ellipse 2.png" alt="" srcset="">
+
+              </div>
+              <h3>Juliette Faye</h3>
+              <p class="role">Self Care</p>
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id in posuere id leo, auctor aliquam feugiat fermentum. Aliquam integer ullamcorper tortor ac quis tortor. Pulvinar nisl sed.</p>
+              </blockquote>
+            </article>
+          </div>
+
+          <button class="fleche" type="button" aria-label="Témoignages suivants" data-cible="piste-temoignages" data-sens="1">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+      <div class="conteneur">
+        <h2 class="titre-section">Contact</h2>
+      </div>
+
+      <div class="formulaire">
+        <!-- <form> : formulaire. action = où envoyer les données ; method="post" = envoi sécurisé dans le corps de la requête -->
+        <form action="#" method="post">
+          <label for="nom">Nom complet</label>
+          <!-- <label for="nom"> : étiquette liée au champ qui a id="nom" (cliquer sur le texte active le champ) -->
+          <input type="text" id="nom" name="nom" autocomplete="name" required />
+          <!-- <input> : champ de saisie ; name = nom de la donnée envoyée ; required = champ obligatoire -->
+
+          <label for="structure">Structure</label>
+          <input type="text" id="structure" name="structure" autocomplete="organization" />
+
+          <label for="email">Adresse mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+          
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+  
+
+         
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIED DE PAGE ===================== -->
+  <footer class="pied">
+    
+    <div class="conteneur">
+      <div class="colonnes">
+        <div class="col">
+          <h3>ParBa</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quibusdam architecto magni deleniti iure laborum, dolorem <br>temporibus consequuntur voluptatum quam ipsa minus,<br> id aut modi harum expedita adipisci optio consectetur quod.</p>
+        </div>
+        <div class="col col-large">
+          <h3>A Propos</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Aperiam tenetur qui facilis doloremque illum totam sint bmolestiae <br>harum maxime quia, nisi laudantium sapiente,<br> alias deleniti maiores sit corrupti dolorum voluptatum!</p>
+        </div>
+        <div class="alignec1">
+
+  <ul class="reseaux1">
+    <!-- Remplace "#" par les vrais liens de vos réseaux ; target="_blank" ouvre dans un nouvel onglet -->
+    <li><a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
+    <li><a href="#" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="#" aria-label="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-square-twitter"></i></a></li>
+    <li><a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-square-linkedin"></i></a></li>
+  </ul>
+</div>
+      </div>
+<div class="alignec">
+
+  <ul class="reseaux" aria-label="Réseaux sociaux">
+    <!-- Remplace "#" par les vrais liens de vos réseaux ; target="_blank" ouvre dans un nouvel onglet -->
+    <li><a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
+    <li><a href="#" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="#" aria-label="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-square-twitter"></i></a></li>
+    <li><a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-square-linkedin"></i></a></li>
+  </ul>
+</div>
+      </div>
+         <p class="copyright">COPYRIGHT 2021 | DEFAR Sci - Tout droit réservés > </p>
+    </div>
+  </footer>
+  
+</body>
